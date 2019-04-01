@@ -60,7 +60,7 @@ var quillDirective = function quillDirective(globalOptions) {
         var content = model ? model.value : _value || _content;
 
         if (content) {
-          quill.pasteHTML(content);
+          quill.clipboard.dangerouslyPasteHTML(content);
         }
 
         if (disabled) {

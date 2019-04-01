@@ -79,7 +79,7 @@ const quillDirective = globalOptions => {
 
         // Set editor content
         if (content) {
-          quill.pasteHTML(content)
+          quill.clipboard.dangerouslyPasteHTML(content)
         }
 
         // Disabled editor
